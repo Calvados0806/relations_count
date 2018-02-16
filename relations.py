@@ -45,7 +45,7 @@ def isTransit(T):
 			counter += 1
 
 # Main code
-a, b, c = 0, 1, 2
+a, b, c = 'a', 'b', 'c'
 counter = 0
 m = (a, b, c)
 dec = list()
