@@ -1,6 +1,6 @@
 # relations_count
 ![alt text](./Logo.png)
-# __Version 1.0 (16.02.2018)__
+# __Version 1.1 (18.02.2018)__
 ---
 This python script generates all relations in a set of three elements and
 checks each for transitivity.

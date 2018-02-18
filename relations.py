@@ -1,3 +1,7 @@
+# Global variables
+counter = 0
+d = set()
+
 # Some needed functions
 def rem(T, e):
 	T1 = list(T)
@@ -45,23 +49,27 @@ def isTransit(T):
 			counter += 1
 
 # Main code
-a, b, c = 'a', 'b', 'c'
-counter = 0
-m = (a, b, c)
-dec = list()
-d = set()
+def main():
+	global d
+	global counter
+	a, b, c = 'a', 'b', 'c'
+	m = (a, b, c)
+	dec = list()
 
-for i in range(len(m)):
-	for j in range(len(m)):
-		dec.append((m[i], m[j]))
+	for i in range(len(m)):
+		for j in range(len(m)):
+			dec.append((m[i], m[j]))
 
-length = len(dec)
-d.add(None)
-d.add(tuple(dec))
-P(tuple(dec), length)
-d = tuple(d)
+	length = len(dec)
+	d.add(None)
+	d.add(tuple(dec))
+	P(tuple(dec), length)
+	d = tuple(d)
 
-for i in d:
-	isTransit(i)
+	for i in d:
+		isTransit(i)
 
-print(counter)
+	print(counter)
+
+if __name__ == '__main__':
+	main()
